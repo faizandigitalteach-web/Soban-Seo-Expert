@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soban Seo Expert — Learn, Grow & Succeed Together</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+</head>
+<body>
+<div class="topbar">🔥 New Video Every Week — Subscribe & Press Bell Icon 🔔</div>
+<header>
+<div class="nav">
+<a class="logo" href="#">Soban <span>Seo Expert</span></a>
+<nav><a href="#home" class="active">Home</a><a href="#popular">Popular</a><a href="#videos">Videos</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="https://www.youtube.com/@SobanSeoExpert" target="_blank">Subscribe</a>
+<button id="menuBtn" onclick="toggleMenu()">☰</button>
+</div>
+<div id="mobileMenu"><a href="#home">Home</a><a href="#popular">Popular</a><a href="#videos">Videos</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</header>
+
+<section id="home" class="hero"><div class="hero-in">
+<div>
+<span class="pill">13.6K Subscribers • 34 Videos • Pakistan</span>
+<h1>SUBSCRIBE<small>Learn, Grow &amp;<br>Succeed Together!</small></h1>
+<p>SEO, YouTube Growth, Monetization, Study Abroad &amp; Tech Tutorials — simple Urdu / English, step-by-step.</p>
+<div class="hero-btns"><a class="btn" href="https://www.youtube.com/@SobanSeoExpert" target="_blank">Watch Latest Video</a><a class="btn2" href="#videos">Explore Videos</a></div>
+<div class="stats"><div><b>13.6K</b><span>Subscribers</span></div><div><b>34</b><span>Videos</span></div><div><b>150K+</b><span>Total Views</span></div></div>
+</div>
+<div>
+<div class="card"><div class="avatar">S</div><h3>Soban Seo Expert</h3><p>@SobanSeoExpert</p><div class="card-btns"><button id="subBtn" class="btn-dark" onclick="toggleSub()">🔔 Subscribed</button><button class="btn-like" onclick="toggleLike()">❤️ <span id="likeCount">1240</span></button></div><p class="small">YouTube • SEO • Tech • Study Abroad</p></div>
+<div class="featured"><span class="tag">LATEST • 406 views</span><h4>I Monetized My YouTube Channel in 2026 — Here's Exactly How</h4><p style="color:#ccc;font-size:14px">Every method to make money on YouTube — YPP to sponsorships.</p><br><a href="https://www.youtube.com/@SobanSeoExpert" target="_blank">Watch Now →</a></div>
+</div>
+</div></section>
+
+<div class="wrap"><h2 style="text-align:center">What You Will Learn Here</h2><div class="topics-grid">
+<div class="topic"><h3>📈 SEO &amp; Growth</h3><p>Rank videos, grow channel, get views.</p></div>
+<div class="topic"><h3>💰 Monetization</h3><p>YPP, 1000 Subs, 4000 Watch Hours.</p></div>
+<div class="topic"><h3>🎓 Study Abroad</h3><p>Japan, LUMS NOP, NUML, Scholarships.</p></div>
+<div class="topic"><h3>📱 Tech &amp; WhatsApp</h3><p>Fixes, Meta AI, Apps &amp; Tricks.</p></div>
+</div></div>
+
+<div class="wrap" id="popular"><div class="section-head"><h2>🔥 Popular Videos</h2></div><div class="grid" id="popularGrid"></div></div>
+
+<div class="gray"><div class="wrap" id="videos">
+<div class="section-head"><h2>📺 All Videos</h2><input class="search" id="searchInput" oninput="applyFilter()" placeholder="Search... WhatsApp, LUMS, Japan"></div>
+<div class="filters">
+<button class="chip active" onclick="setCat('all',this)">All</button>
+<button class="chip" onclick="setCat('youtube',this)">YouTube</button>
+<button class="chip" onclick="setCat('whatsapp',this)">WhatsApp</button>
+<button class="chip" onclick="setCat('study',this)">Study</button>
+<button class="chip" onclick="setCat('tech',this)">Tech</button>
+</div>
+<div class="grid" id="videoGrid"></div>
+<p id="noResult" class="hidden" style="text-align:center;padding:20px">No videos found. Try another word.</p>
+</div></div>
+
+<section id="about" class="about"><div class="about-in">
+<div><h2>About Soban</h2><p style="margin-top:10px">Assalam-o-Alaikum! I am Soban. I started this channel to help students &amp; creators in Pakistan learn real skills — no fake promises. From monetizing my own channel to helping you apply for scholarships, I share what actually works.</p><ul><li>✅ 100% Practical Tutorials</li><li>✅ Step-by-Step in Easy Language</li><li>✅ Real Experience, No Clickbait</li></ul><a class="btn" href="https://www.youtube.com/@SobanSeoExpert" target="_blank">Subscribe on YouTube</a></div>
+<div class="about-card"><h3>Channel Goal</h3><p class="big">100K Subscribers</p><div class="progress"><div class="bar"></div></div><p>13.6K / 100K — Help me reach there!</p><p><strong>Next Milestone:</strong> 20K Subs</p></div>
+</div></section>
+
+<div class="wrap center" id="contact"><h2>Stay Connected</h2><p>For collaborations, sponsorships &amp; questions</p><div class="socials"><a href="https://www.youtube.com/@SobanSeoExpert" target="_blank">YouTube</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div>
+<form onsubmit="sendMsg(event)"><input id="nameInput" type="text" placeholder="Your Name" required><input type="email" placeholder="Your Email" required><textarea placeholder="Your Message" rows="4"></textarea><button type="submit">Send Message</button></form><p id="formMsg" style="color:green;font-weight:700"></p></div>
+
+<footer>© 2026 Soban Seo Expert • youtube.com/@SobanSeoExpert</footer>
+
+<script>
+     var videos=[
+{title:"Study in Japan for FREE! | Asia Kakehashi Project",views:"65K",time:"1y ago",cat:"study",color:"#ff6b35",label:"JAPAN",dur:"0:16"},
+{title:"This Account Can No Longer Use WhatsApp Fix 2026",views:"23K",time:"1y ago",cat:"whatsapp",color:"#25D366",label:"WHATSAPP",dur:"3:27"},
+{title:"LUMS NOP 2026 Form Filling Step by Step",views:"14K",time:"2y ago",cat:"study",color:"#1a365d",label:"LUMS",dur:"27:02"},
+{title:"How to Install Google Play Store on PC or Laptop",views:"13K",time:"3y ago",cat:"tech",color:"#4285F4",label:"PC",dur:"1:47"},
+{title:"How to Download and Install WhatsApp in PC or Laptop",views:"8.3K",time:"3y ago",cat:"whatsapp",color:"#075E54",label:"WHATSAPP",dur:"1:49"},
+{title:"How to pay 1bill invoice through jazzcash",views:"5.1K",time:"1y ago",cat:"tech",color:"#f59e0b",label:"JAZZCASH",dur:"2:40"},
+{title:"How to Change YouTube Channel Banner on Android",views:"328",time:"2mo ago",cat:"youtube",color:"#FF0000",label:"YOUTUBE",dur:"0:57"},
+{title:"How to Create a Best Editor Award AI Video",views:"839",time:"3mo ago",cat:"youtube",color:"#7c3aed",label:"AI",dur:"6:04"},
+{title:"WhatsApp New Meta AI Feature 2026",views:"135",time:"3mo ago",cat:"whatsapp",color:"#0082FB",label:"META AI",dur:"2:06"},
+{title:"How to Change Your Mobile Wallpaper (2026)",views:"125",time:"3mo ago",cat:"tech",color:"#06b6d4",label:"MOBILE",dur:"2:00"},
+{title:"How to Fix Download the Official WhatsApp Error",views:"2.3K",time:"5mo ago",cat:"whatsapp",color:"#25D366",label:"FIX",dur:"1:32"},
+{title:"How to Apply in NUML University Admission 2026",views:"301",time:"9mo ago",cat:"study",color:"#0f766e",label:"NUML",dur:"13:18"}
+];
+var currentCat="all";
+function makeCard(v){
+return '<div class="vcard"><div class="thumb" style="background:'+v.color+'"><span>'+v.label+'</span><span>'+v.dur+'</span></div><div class="vbody"><h3>'+v.title+'</h3><p>'+v.views+' views • '+v.time+' • Soban Seo Expert</p><a href="https://www.youtube.com/@SobanSeoExpert" target="_blank">Watch on YouTube →</a></div></div>';
+}
+function render(list, id){ document.getElementById(id).innerHTML = list.map(makeCard).join(""); }
+render(videos.slice(0,6), "popularGrid");
+render(videos, "videoGrid");
+function setCat(cat, btn){
+ currentCat = cat;
+ var chips = document.querySelectorAll(".chip");
+ for(var i=0;i<chips.length;i++){ chips[i].classList.remove("active"); }
+ btn.classList.add("active");
+ applyFilter();
+}
+function applyFilter(){
+ var q = document.getElementById("searchInput").value.toLowerCase();
+ var filtered = videos.filter(function(v){ return (currentCat==="all" || v.cat===currentCat) && v.title.toLowerCase().indexOf(q) !== -1; });
+ render(filtered, "videoGrid");
+ document.getElementById("noResult").classList.toggle("hidden", filtered.length>0);
+}
+function toggleMenu(){
+ var m = document.getElementById("mobileMenu");
+ if(m.style.display==="flex"){ m.style.display="none"; } else { m.style.display="flex"; }
+}
+var isSub=true, isLiked=false, likes=1240;
+function toggleSub(){
+ isSub=!isSub;
+ var b=document.getElementById("subBtn");
+ b.textContent = isSub ? "🔔 Subscribed" : "▶ Subscribe";
+ b.style.background = isSub ? "#111" : "#f00";
+}
+function toggleLike(){
+ isLiked=!isLiked;
+ likes = isLiked ? likes+1 : likes-1;
+ document.getElementById("likeCount").textContent = likes;
+}
+function sendMsg(e){
+ e.preventDefault();
+ var name=document.getElementById("nameInput").value;
+ document.getElementById("formMsg").textContent="Thanks "+name+"! Message received. Soban will reply soon.";
+ e.target.reset();
+}
+</script>
+</body>
+</html>
